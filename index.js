@@ -1,15 +1,15 @@
-let homeScoreEl = document.getElementById("home-score");
-let guestScoreEl = document.getElementById("guest-score");
+let saveEl = document.getElementById("save-el")
+let countEl = document.getElementById("count-el")
+let count = 0
 
-let homeScore = 0;
-let guestScore = 0;
-
-function increasehomescroe(points) {
-    homeScore += points;
-    homeScoreEl.textContent = homeScore;
+function increment() {
+    count += 1
+    countEl.textContent = count
 }
 
-function increaseguestscore(points) {
-    guestScore += points;
-    guestScoreEl.textContent = guestScore;
+function save() {
+    let countStr = count + " - "
+    saveEl.textContent += countStr
+    countEl.textContent = count
+    count = 0
 }

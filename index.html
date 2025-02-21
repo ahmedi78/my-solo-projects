@@ -1,34 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="scoreboard">
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
         <div class="container">
-            <div class="team">
-                <h3>HOME</h3>
-                <div id="home-score">0</div>
-                <div class="button-container">
-                    <button onclick="increasehomescroe(1)">+1</button>
-                    <button onclick="increasehomescroe(2)">+2</button>
-                    <button onclick="increasehomescroe(3)">+3</button>
-                </div>
-            </div>
-
-            <div class="team">
-                <h3>GUEST</h3>
-                <div id="guest-score">0</div>
-                <div class="button-container">
-                    <button onclick="increaseguestscore(1)">+1</button>
-                    <button onclick="increaseguestscore(2)">+2</button>
-                    <button onclick="increaseguestscore(3)">+3</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="index.js"></script>
-</body>
+        <h1>People entered:</h1>
+        <h2 id="count-el">0</h2>
+        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+        <button id="save-btn" onclick="save()">SAVE</button>
+        <p id="save-el">Previous entries: </p>
+          <div>
+        <script src="index.js">
+          
+        </script>
+    </body>
 </html>
+
+
+
 
 
